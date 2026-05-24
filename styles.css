@@ -81,12 +81,12 @@ h1 { font-family: 'Roboto Slab', Georgia, serif; font-size: clamp(48px, 7vw, 92p
 .call-line a { color: var(--blue); font-size: 22px; }
 .quality-note { padding-top: 10px; }
 .quality-note .narrow { font-size: 17px; border-left: 5px solid var(--blue); padding-left: 26px; }
-.contact-band { display: grid; grid-template-columns: 1fr 1fr; background: #eef2f6; }
-.contact-left { background: var(--blue); color: #fff; padding: 74px max(28px, calc((100vw - 1140px) / 2)) 74px max(28px, calc((100vw - 1140px) / 2)); }
-.contact-inner { max-width: 560px; margin-left: auto; }
+.contact-band { display: flex; justify-content: center; background: var(--blue); }
+.contact-left { width: min(1140px, 100%); background: var(--blue); color: #fff; padding: 74px 64px; }
+.contact-inner { max-width: 1000px; margin-left: auto; margin-right: auto; }
 .contact-band h2 { color: #fff; }
-.main-form { display: grid; gap: 15px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.main-form { display: grid; gap: 16px; max-width: 1000px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .main-form textarea { min-height: 145px; resize: vertical; }
 .main-form button { width: fit-content; background: var(--navy); }
 .form-note { color: rgba(255,255,255,.72); font-size: 13px; margin: 0; }
@@ -146,10 +146,10 @@ details p { margin: 10px 0 0; color: var(--muted); }
   .main-nav a { padding: 10px 0; }
   .menu-toggle { display: block; }
   .hero-form { grid-template-columns: 1fr; max-width: 520px; }
-  .feature-grid, .about-grid, .contact-band, .maintenance-grid, .stats-grid, .footer-grid { grid-template-columns: 1fr; }
+  .feature-grid, .about-grid, .maintenance-grid, .stats-grid, .footer-grid { grid-template-columns: 1fr; }
   .feature-grid { transform: none; margin-bottom: 0; padding-top: 35px; }
   .about-media { max-width: 650px; margin: 0 auto; }
-  .contact-inner { max-width: none; margin-left: 0; }
+  .contact-inner { max-width: 100%; margin-left: auto; margin-right: auto; }
   .contact-right { min-height: 420px; }
   .before-after-grid, .two-col-text { grid-template-columns: 1fr; }
 }
